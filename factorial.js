@@ -61,13 +61,75 @@ const smallestDivisor = (num) => {
   console.log(smallestDivisor2(17)); */
 
   const reverse = (str) => {
-      result = "";
-      i = str.length;
+      let result = "";
+      let i = str.length - 1;
 
-      while (i >= 0){
-          result = result + str[i];
-          i = i - 1;
+      for (; i >= 0; i--){
+          result += str[i];
+          
       }
+      return result;
   }
 
-  console.log("hello!");
+  console.log(reverse("аллилуйя"));
+
+
+let x = 5;
+let y = 10;
+
+console.log(x++ + ++y);
+
+const trySwitch = (num) => {
+    
+    let answer = '';
+
+    switch(num) {
+        
+        case 1:
+        answer = "one";
+        break;
+
+        case 2:
+        answer = "two";
+        break;
+
+        default:
+        answer = "Nothing";
+        break;
+    }
+    return answer;
+}
+
+console.log(trySwitch(3));
+
+let a = 4;
+
+a -= 8 - a;
+
+
+let b = 10;
+b += b ** 2 > 20 ? 1 : 10;
+
+
+let c = 10;
+
+c = c ** 2;
+
+const isPrime = (num) => {
+
+    if (num <= 1){
+        return false;
+    }
+
+    for (let i = 1; i < num; i += 1){
+      
+          if (i > 1 && num % i === 0) {
+            return false;
+        }
+        
+}
+    return true;
+}
+
+console.log(isPrime(17));
+
