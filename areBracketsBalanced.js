@@ -6,6 +6,9 @@ const areBracketsBalanced = (str) => {
        if (str[i] == "(" && str[i-1] == ")"){
            return false;
        }
+       else if (str[i] == " " || str[i] == ""){
+           return true;
+       }
        else if (str[i] == "("){
            a += 1;
        } 
@@ -20,4 +23,4 @@ const areBracketsBalanced = (str) => {
     return false; 
 }
 
-console.log(areBracketsBalanced("((()))"))
+console.log(areBracketsBalanced("                  "))
