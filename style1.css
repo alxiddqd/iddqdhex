@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+header, nav, section, article, footer, main, aside, div {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+li {
+    display: inline;
+}
